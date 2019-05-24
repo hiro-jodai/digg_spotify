@@ -1,0 +1,13 @@
+body{
+  header{
+    height: 100px;
+    background-color: #2a6496;
+  }
+  > div#main_content{
+    min-height: 400px;
+  }
+  footer {
+    height: 100px;
+    background-color: #2a6496;
+  }
+}

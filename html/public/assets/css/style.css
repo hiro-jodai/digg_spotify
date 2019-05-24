@@ -1,0 +1,397 @@
+/*!
+ * Bootstrap Reboot v4.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+/* line 8, ../scss/_reset.scss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* line 14, ../scss/_reset.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+/* line 25, ../scss/_reset.scss */
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+/* line 29, ../scss/_reset.scss */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+/* line 40, ../scss/_reset.scss */
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+/* line 44, ../scss/_reset.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* line 50, ../scss/_reset.scss */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+/* line 54, ../scss/_reset.scss */
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+}
+
+/* line 63, ../scss/_reset.scss */
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+/* line 69, ../scss/_reset.scss */
+ol,
+ul,
+dl {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 77, ../scss/_reset.scss */
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 85, ../scss/_reset.scss */
+dt {
+  font-weight: 700;
+}
+
+/* line 89, ../scss/_reset.scss */
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
+
+/* line 94, ../scss/_reset.scss */
+blockquote {
+  margin: 0 0 1rem;
+}
+
+/* line 98, ../scss/_reset.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* line 103, ../scss/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 107, ../scss/_reset.scss */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+/* line 115, ../scss/_reset.scss */
+sub {
+  bottom: -.25em;
+}
+
+/* line 119, ../scss/_reset.scss */
+sup {
+  top: -.5em;
+}
+
+/* line 123, ../scss/_reset.scss */
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* line 129, ../scss/_reset.scss */
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* line 134, ../scss/_reset.scss */
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 139, ../scss/_reset.scss */
+a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 144, ../scss/_reset.scss */
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+/* line 148, ../scss/_reset.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
+}
+
+/* line 156, ../scss/_reset.scss */
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+  -ms-overflow-style: scrollbar;
+}
+
+/* line 163, ../scss/_reset.scss */
+figure {
+  margin: 0 0 1rem;
+}
+
+/* line 167, ../scss/_reset.scss */
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* line 172, ../scss/_reset.scss */
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+/* line 177, ../scss/_reset.scss */
+table {
+  border-collapse: collapse;
+}
+
+/* line 181, ../scss/_reset.scss */
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #6c757d;
+  text-align: left;
+  caption-side: bottom;
+}
+
+/* line 189, ../scss/_reset.scss */
+th {
+  text-align: inherit;
+}
+
+/* line 193, ../scss/_reset.scss */
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/* line 198, ../scss/_reset.scss */
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+/* line 207, ../scss/_reset.scss */
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+/* line 212, ../scss/_reset.scss */
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* line 223, ../scss/_reset.scss */
+button,
+input {
+  overflow: visible;
+}
+
+/* line 228, ../scss/_reset.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 233, ../scss/_reset.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* line 240, ../scss/_reset.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+/* line 248, ../scss/_reset.scss */
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 254, ../scss/_reset.scss */
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+/* line 261, ../scss/_reset.scss */
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+/* line 266, ../scss/_reset.scss */
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* line 273, ../scss/_reset.scss */
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+/* line 285, ../scss/_reset.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/* line 289, ../scss/_reset.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 294, ../scss/_reset.scss */
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+}
+
+/* line 299, ../scss/_reset.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 303, ../scss/_reset.scss */
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+/* line 308, ../scss/_reset.scss */
+output {
+  display: inline-block;
+}
+
+/* line 312, ../scss/_reset.scss */
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+/* line 317, ../scss/_reset.scss */
+template {
+  display: none;
+}
+
+/* line 321, ../scss/_reset.scss */
+[hidden] {
+  display: none !important;
+}
+
+/* line 2, ../scss/_base.scss */
+body header {
+  height: 100px;
+  background-color: #2a6496;
+}
+/* line 6, ../scss/_base.scss */
+body > div#main_content {
+  min-height: 400px;
+}
+/* line 9, ../scss/_base.scss */
+body footer {
+  height: 100px;
+  background-color: #2a6496;
+}
+
+/* line 2, ../scss/modules/playlists.scss */
+#playlists img.thumbnail {
+  width: 60px;
+  height: 60px;
+}
