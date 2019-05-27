@@ -45,10 +45,14 @@ Class Controller_App extends Controller_Template
         return parent::after($response);
     }
 
-    public function startAuth(): void
+    public function startAuth($is_redirect):?string
     {
-            $this->auth();
+        $url = $this->auth();
+        if($is_redirect){
+            Response::redirect($url);
             die();
+        }
+        return $url;
     }
 
     public function refreshToken():void{
@@ -86,15 +90,14 @@ Class Controller_App extends Controller_Template
         }
     }
 
-    private function auth(): void
+    private function auth():string
     {
         $options = [
             'scope' => [
                 'playlist-read-private',
             ],
         ];
-        Response::redirect($this->api_session->getAuthorizeUrl($options));
-        die();
+        return $this->api_session->getAuthorizeUrl($options);
     }
 
 }

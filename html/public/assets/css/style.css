@@ -382,12 +382,46 @@ body header {
 }
 /* line 6, ../scss/_base.scss */
 body > div#main_content {
+  margin: 10px;
   min-height: 400px;
 }
-/* line 9, ../scss/_base.scss */
+/* line 10, ../scss/_base.scss */
 body footer {
   height: 100px;
   background-color: #2a6496;
+}
+/* line 14, ../scss/_base.scss */
+body .breadcrumb {
+  list-style: none;
+  display: flex;
+}
+/* line 17, ../scss/_base.scss */
+body .breadcrumb > li {
+  padding: 0 10px;
+}
+/* line 19, ../scss/_base.scss */
+body .breadcrumb > li:before {
+  content: '>';
+  position: relative;
+  left: -7px;
+  top: -2px;
+}
+
+/* line 2, ../scss/modules/playlist.scss */
+#playlist h2 {
+  font-size: 40px;
+}
+/* line 5, ../scss/modules/playlist.scss */
+#playlist .playlist_image {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  opacity: 0.5;
+  z-index: 10000;
+}
+/* line 13, ../scss/modules/playlist.scss */
+#playlist table a.icons > img {
+  width: 50px;
 }
 
 /* line 2, ../scss/modules/playlists.scss */

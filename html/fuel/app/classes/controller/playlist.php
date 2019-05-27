@@ -17,4 +17,10 @@ class Controller_Playlist extends Controller_App
         $data['playlists'] = $playlists;
         $this->template->content = View::forge('playlist/index',$data);
     }
+
+    public function action_detail($id):void {
+        $data = [];
+        $data['playlist'] = $this->api->getPlaylist($id);
+        $this->template->content = View::forge('playlist/detail',$data);
+    }
 }

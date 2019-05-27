@@ -1,0 +1,17 @@
+#playlist{
+  h2{
+    font-size: 40px;
+  }
+  .playlist_image{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    opacity: 0.5;
+    z-index: 10000;
+  }
+  table{
+    a.icons>img{
+      width: 50px;
+    }
+  }
+}

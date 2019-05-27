@@ -26,6 +26,8 @@
                     <td>
                         <?=$playlist->owner->id?>
                     </td>
+                    <td>
+                    </td>
                 </tr>
             <?php endforeach;
         endif;?>

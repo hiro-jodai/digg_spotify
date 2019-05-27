@@ -4,10 +4,24 @@ body{
     background-color: #2a6496;
   }
   > div#main_content{
+    margin: 10px;
     min-height: 400px;
   }
   footer {
     height: 100px;
     background-color: #2a6496;
+  }
+  .breadcrumb{
+    list-style: none;
+    display: flex;
+    > li {
+      padding: 0 10px;
+      &:before{
+        content: '>';
+        position: relative;
+        left: -7px;
+        top: -2px;
+      }
+    }
   }
 }

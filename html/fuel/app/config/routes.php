@@ -6,4 +6,6 @@ return array(
 	'hello(/:name)?' => array('welcome/hello', 'name' => 'hello'),
 	'start' => array('index/start', 'name' => 'start'),
 	'playlist' => array('playlist/index', 'name' => 'playlist'),
+//    'playlist/detail' => array('playlist/detail', 'name' => 'playlist/detail'),
+	'album' => array('album/detail', 'name' => 'album'),
 );
