@@ -7,6 +7,7 @@ Use Fuel\Core\Response;
 class Controller_Album extends Controller_App
 {
     public function action_index():void {
+
     }
 
     public function action_detail($id):void {

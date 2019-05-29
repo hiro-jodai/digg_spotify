@@ -1,27 +1,23 @@
 body{
   header{
-    height: 100px;
-    background-color: #2a6496;
+    //height: 100px;
+    //background-color: #5cb85c;
+    //display: flex;
   }
-  > div#main_content{
-    margin: 10px;
-    min-height: 400px;
+  //> div#main_content{
+  //  margin: 10px;
+  //  min-height: vh;
+  //}
+  .navbar-collapse{
+    width: 100vw;
   }
   footer {
-    height: 100px;
-    background-color: #2a6496;
+    //height: 100px;
+    //background-color:  #5cb85c;
   }
-  .breadcrumb{
-    list-style: none;
-    display: flex;
-    > li {
-      padding: 0 10px;
-      &:before{
-        content: '>';
-        position: relative;
-        left: -7px;
-        top: -2px;
-      }
-    }
+  a.icons>img{
+    max-width: 50px;
+    width: 5vw;
   }
+
 }

@@ -5,19 +5,28 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,shrink-to-fit=no">
     <link rel="stylesheet" href="/assets/css/style.css"/>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/assets/css/bootstrap-theme.min.css"/>
 </head>
 <body>
-<header>
-    <a href="/"><h1 id="site_title">Digg(仮)</h1></a>
-    <div>
-        <?php if(isset($user_id)):?>
-        <p>hello <?=$user_id?></p>
-        <?php else:?>
-        <a href="/start">Spotifyでログイン</a>
-        <?php endif;?>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="collapse navbar-collapse">
+                <a href="/" class="title navbar-brand">Digg(仮)</a>
+                <?php if(isset($user_id)):?>
+                    <a class="navbar-text" href="/playlist">プレイリスト一覧</a>
+                    <a class="navbar-text" href="/label">レーベル</a>
+                    <p class="navbar-text navbar-right"><?=$user_id?>でログイン中</p>
+                    <a class="navbar-text navbar-right" href="/logout">ログアウト</a>
+                <?php else:?>
+                    <a class="navbar-text navbar-right" href="/start">Spotifyでログイン</a>
+                <?php endif;?>
+            </div>
+        </div>
     </div>
-</header>
-<div id="main_content">
+</nav>
+<div id="container">
     <?php echo $content; ?>
 </div>
 <footer>

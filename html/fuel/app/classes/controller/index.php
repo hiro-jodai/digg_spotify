@@ -17,7 +17,7 @@ class Controller_Index extends Controller_App {
         $this->template->content = View::forge('index/start',$data);
     }
 
-    public function action_end(): void
+    public function action_logout(): void
     {
         Session::delete('UserId');
         Session::delete('AccessToken');

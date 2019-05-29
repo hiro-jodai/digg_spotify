@@ -1,11 +1,6 @@
 <div id="playlists">
-    <form action="/playlist" type="GET">
-        件数<select name="max" id="">
-            <option value="20">20</option>
-            <option value="50">50</option>
-        </select>
-    </form>
-    <table>
+    <h2>プレイリスト一覧</h2>
+    <table class="table table-hover">
         <tr>
             <th></th>
             <th>プレイリスト名</th>
@@ -13,9 +8,7 @@
         </tr>
 
         <?php if(isset($playlists->items)):
-            foreach($playlists->items as $playlist):
-
-                ?>
+            foreach($playlists->items as $playlist):?>
                 <tr>
                     <td>
                         <img class="thumbnail" src="<?=$playlist->images[0]->url?>" alt="">
@@ -32,4 +25,5 @@
             <?php endforeach;
         endif;?>
     </table>
+    <?= $ret = Html_App::pager($current,$playlists->total);?>
 </div>

@@ -5,7 +5,8 @@ return array(
 	
 	'hello(/:name)?' => array('welcome/hello', 'name' => 'hello'),
 	'start' => array('index/start', 'name' => 'start'),
+	'logout' => array('index/logout', 'name' => 'logout'),
 	'playlist' => array('playlist/index', 'name' => 'playlist'),
-//    'playlist/detail' => array('playlist/detail', 'name' => 'playlist/detail'),
-	'album' => array('album/detail', 'name' => 'album'),
+	'album' => array('album/index', 'name' => 'album'),
+	'label' => array('label/index', 'name' => 'label'),
 );

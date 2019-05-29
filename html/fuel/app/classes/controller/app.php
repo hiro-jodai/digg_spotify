@@ -95,9 +95,19 @@ Class Controller_App extends Controller_Template
         $options = [
             'scope' => [
                 'playlist-read-private',
+                'user-read-email',
+
             ],
         ];
         return $this->api_session->getAuthorizeUrl($options);
+    }
+
+    protected function getPagingOptions(int $page_num,int $limit = PAGE_LIMIT):?array {
+        $offset = ($page_num - 1) * $limit;
+        return [
+            'offset' => $offset,
+            'limit' =>$limit
+        ];
     }
 
 }
