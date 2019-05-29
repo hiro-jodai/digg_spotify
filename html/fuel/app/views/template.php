@@ -16,7 +16,7 @@
                 <a href="/" class="title navbar-brand">Digg(仮)</a>
                 <?php if(isset($user_id)):?>
                     <a class="navbar-text" href="/playlist">プレイリスト一覧</a>
-                    <a class="navbar-text" href="/label">レーベル</a>
+<!--                    <a class="navbar-text" href="/label">レーベル</a>-->
                     <p class="navbar-text navbar-right"><?=$user_id?>でログイン中</p>
                     <a class="navbar-text navbar-right" href="/logout">ログアウト</a>
                 <?php else:?>

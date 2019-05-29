@@ -15,7 +15,7 @@
                 ?>
             </p>
             <p><?=$album->label?></p>
-            <button type="button" id="label_name" value="<?=$album->label?>" class="btn btn-success"><span class="oi" data-glyph="star" title="star" aria-hidden="true"></span>レーベルをお気に入りに追加する</button>
+<!--            <button type="button" id="label_name" value="--><?//=$album->label?><!--" class="btn btn-success"><span class="oi" data-glyph="star" title="star" aria-hidden="true"></span>レーベルをお気に入りに追加する</button>-->
         </div>
         <div class="row col-sm-4">
             <hr>
